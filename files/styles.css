@@ -1,0 +1,54 @@
+* {
+    margin: 1px; /*separate the sections of our web page.*/
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: black;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* want sections to flow from top to bottom*/
+  }
+  .flex-header {
+    background-color: #FBF0BE;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .flex-main {
+    display: flex;
+    flex: 1; /*takes up the vertical space*/
+  }
+  .flex-nav {
+    background-color: #BEEDCB;
+    padding-top: 3rem;
+    flex: 1 1 1rem; /*takes up the horizontal space*/
+  }
+  .flex-article {
+    background-color: #EEDFDE;
+    padding-top: 3rem;
+    flex: 3 3;
+  }
+  .flex-aside {
+    background-color: #BEEDCB;
+    padding-top: 3rem;
+    flex: 1 1 1rem; /*takes up the horizontal space*/
+  }
+  .flex-footer {
+    background-color: #FEA2AD;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  @media all and (max-width: 540px) {
+    .flex-main {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+
